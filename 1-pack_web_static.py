@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Generates a .tgz archive from the
-contents of the web_static folder"""
+contents of the web_static folder
+"""
 
 from fabric.operations import local
 from datetime import datetime
@@ -14,4 +15,4 @@ def do_pack():
                    capture=True)
     if result.failed:
         return None
-    return  result
+    return result

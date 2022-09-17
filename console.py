@@ -157,6 +157,7 @@ class HBNBCommand(cmd.Cmd):
         print(my_list)
         # except NameError:
         #     print("** class doesn't exist **")
+        # display output
 
     def do_update(self, line):
         """Updates an instanceby adding or updating attribute

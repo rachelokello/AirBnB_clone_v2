@@ -4,6 +4,7 @@ do_pack(): Generates a .tgz archive from the
 contents of the web_static folder
 do_deploy(): Distributes an archive to a web server
 deploy (): Creates and distributes an archive to a web server
+Creates access to the web server
 """
 
 from fabric.operations import local, run, put
@@ -76,4 +77,3 @@ def deploy():
         return False
     d = do_deploy(filepath)
     return d
-
